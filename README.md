@@ -7,7 +7,7 @@
 
 <div align="center">
   
-<h1 align="center">🥇 Leaderboard 🏆</h1>
+<h1 align="center">🏆 Leaderboard 🥇</h1>
 </div>
 
 
