@@ -9,3 +9,7 @@ document.getElementById('submit').addEventListener('click', () => {
   leaderboard.addItem(newName, newScore);
   listScores(leaderboard.list);
 });
+
+window.onload = async () => {
+  await leaderboard.createGame('Your Game Name');
+};
