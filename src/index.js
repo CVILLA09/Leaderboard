@@ -12,6 +12,8 @@ document.getElementById('submit').addEventListener('click', () => {
 
 window.onload = async () => {
   await leaderboard.createGame('Your Game Name');
+  await leaderboard.getScores(); // Fetch the scores when the page is loaded
+  listScores(leaderboard.list);
 };
 
 document.querySelector('.refresh-button').addEventListener('click', async () => {
