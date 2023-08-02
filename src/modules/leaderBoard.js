@@ -26,4 +26,10 @@ export default class Leaderboard {
     };
     this.list.push(newItem);
   }
+
+  async getScores() {
+    const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this.gameId}/scores/`);
+    const data = await response.json();
+    this.list = data.result; // Save the scores in your list
+  }
 }
