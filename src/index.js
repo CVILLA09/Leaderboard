@@ -13,3 +13,8 @@ document.getElementById('submit').addEventListener('click', () => {
 window.onload = async () => {
   await leaderboard.createGame('Your Game Name');
 };
+
+document.querySelector('.refresh-button').addEventListener('click', async () => {
+  await leaderboard.getScores();
+  listScores(leaderboard.list);
+});
