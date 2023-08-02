@@ -19,12 +19,19 @@ export default class Leaderboard {
     this.gameId = data.result.slice(14); // Extract the game ID from the response
   }
 
-  addItem(newName, newScore) {
-    const newItem = {
-      name: newName,
-      score: newScore,
-    };
-    this.list.push(newItem);
+  async addItem(newName, newScore) {
+    const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this.gameId}/scores/`, {
+      method: 'POST',
+      body: JSON.stringify({
+        user: newName,
+        score: newScore,
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    });
+
+    const result = await response.json();
   }
 
   async getScores() {
