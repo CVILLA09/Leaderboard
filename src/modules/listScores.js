@@ -7,7 +7,7 @@ export default (list) => {
 
   list.forEach((item) => {
     const scoreItem = document.createElement('li');
-    scoreItem.textContent = `${item.name}: ${item.score}`;
+    scoreItem.textContent = `${item.user}: ${item.score}`;
     container.appendChild(scoreItem);
   });
 };
