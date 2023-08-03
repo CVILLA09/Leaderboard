@@ -191,10 +191,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 #title {
   position: absolute;
   top: 5vh;
-  left: 35%;
+  left: 37%;
   transform: translateX(-60%);
   text-align: center;
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 .leader-board {
@@ -227,6 +227,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
   border: 1px solid #ccc;
   height: 200px;
   overflow: auto;
+}
+
+.scores-container li:nth-child(odd) {
+  background-color: #fff;
+  padding-left: 1vw;
+}
+
+.scores-container li:nth-child(even) {
+  background-color: #f6f6f6;
+  padding-left: 1vw;
 }
 
 button {
@@ -266,7 +276,7 @@ input {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;EACE,yBAAyB;EACzB,8CAA8C;EAC9C,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,aAAa;EACb,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,2BAA2B;EAC3B,kBAAkB;EAClB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,SAAS;EACT,UAAU;EACV,8BAA8B;EAC9B,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,sBAAsB;EACtB,uCAAuC;AACzC;;AAEA;;EAEE,UAAU;AACZ;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,qBAAqB;EACrB,UAAU;EACV,sBAAsB;EACtB,aAAa;EACb,cAAc;AAChB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,yBAAyB;EACzB,WAAW;EACX,eAAe;AACjB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,8BAA8B;EAC9B,YAAY;EACZ,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;EAClB,UAAU;EACV,YAAY;EACZ,oBAAoB;EACpB,YAAY;AACd;;AAEA;EACE,UAAU;EACV,eAAe;EACf,mBAAmB;EACnB,sBAAsB;EACtB,kBAAkB;AACpB","sourcesContent":["body {\n  background-color: #f6f6f6;\n  font-family: 'Courier New', Courier, monospace;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n#title {\n  position: absolute;\n  top: 5vh;\n  left: 35%;\n  transform: translateX(-60%);\n  text-align: center;\n  font-size: 4vw;\n}\n\n.leader-board {\n  display: flex;\n  gap: 2rem;\n  width: 60%;\n  justify-content: space-between;\n  padding: 2rem;\n  border: 1px solid #ccc;\n  border-radius: 10px;\n  background-color: #fff;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n}\n\n.recent-scores,\n.add-score {\n  width: 45%;\n}\n\n.recent-title {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-bottom: 1rem;\n}\n\n.scores-container {\n  list-style-type: none;\n  padding: 0;\n  border: 1px solid #ccc;\n  height: 200px;\n  overflow: auto;\n}\n\nbutton {\n  height: 2rem;\n  width: 6rem;\n  border: none;\n  border-radius: 5px;\n  background-color: #007bff;\n  color: #fff;\n  cursor: pointer;\n}\n\nbutton:hover {\n  background-color: #0056b3;\n}\n\n.input-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  height: 100%;\n  margin-top: 35px;\n}\n\n.submit-button {\n  position: relative;\n  top: -80px;\n  right: -72px;\n  align-self: flex-end;\n  margin: auto;\n}\n\ninput {\n  width: 80%;\n  padding: 0.5rem;\n  margin-bottom: 1rem;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;EACE,yBAAyB;EACzB,8CAA8C;EAC9C,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,aAAa;EACb,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,2BAA2B;EAC3B,kBAAkB;EAClB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,SAAS;EACT,UAAU;EACV,8BAA8B;EAC9B,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,sBAAsB;EACtB,uCAAuC;AACzC;;AAEA;;EAEE,UAAU;AACZ;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,qBAAqB;EACrB,UAAU;EACV,sBAAsB;EACtB,aAAa;EACb,cAAc;AAChB;;AAEA;EACE,sBAAsB;EACtB,iBAAiB;AACnB;;AAEA;EACE,yBAAyB;EACzB,iBAAiB;AACnB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,yBAAyB;EACzB,WAAW;EACX,eAAe;AACjB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,8BAA8B;EAC9B,YAAY;EACZ,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;EAClB,UAAU;EACV,YAAY;EACZ,oBAAoB;EACpB,YAAY;AACd;;AAEA;EACE,UAAU;EACV,eAAe;EACf,mBAAmB;EACnB,sBAAsB;EACtB,kBAAkB;AACpB","sourcesContent":["body {\n  background-color: #f6f6f6;\n  font-family: 'Courier New', Courier, monospace;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n#title {\n  position: absolute;\n  top: 5vh;\n  left: 37%;\n  transform: translateX(-60%);\n  text-align: center;\n  font-size: 5vw;\n}\n\n.leader-board {\n  display: flex;\n  gap: 2rem;\n  width: 60%;\n  justify-content: space-between;\n  padding: 2rem;\n  border: 1px solid #ccc;\n  border-radius: 10px;\n  background-color: #fff;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n}\n\n.recent-scores,\n.add-score {\n  width: 45%;\n}\n\n.recent-title {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-bottom: 1rem;\n}\n\n.scores-container {\n  list-style-type: none;\n  padding: 0;\n  border: 1px solid #ccc;\n  height: 200px;\n  overflow: auto;\n}\n\n.scores-container li:nth-child(odd) {\n  background-color: #fff;\n  padding-left: 1vw;\n}\n\n.scores-container li:nth-child(even) {\n  background-color: #f6f6f6;\n  padding-left: 1vw;\n}\n\nbutton {\n  height: 2rem;\n  width: 6rem;\n  border: none;\n  border-radius: 5px;\n  background-color: #007bff;\n  color: #fff;\n  cursor: pointer;\n}\n\nbutton:hover {\n  background-color: #0056b3;\n}\n\n.input-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  height: 100%;\n  margin-top: 35px;\n}\n\n.submit-button {\n  position: relative;\n  top: -80px;\n  right: -72px;\n  align-self: flex-end;\n  margin: auto;\n}\n\ninput {\n  width: 80%;\n  padding: 0.5rem;\n  margin-bottom: 1rem;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
