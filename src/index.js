@@ -1,3 +1,4 @@
+import './styles.css';
 import Leaderboard from './modules/leaderBoard.js';
 import listScores from './modules/listScores.js';
 
@@ -16,7 +17,7 @@ window.onload = async () => {
   listScores(leaderboard.list);
 };
 
-document.querySelector('.refresh-button').addEventListener('click', async () => {
+document.querySelector('.refresh-buttton').addEventListener('click', async () => { // Corrected class name
   await leaderboard.getScores();
   listScores(leaderboard.list);
 });
