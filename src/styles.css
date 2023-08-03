@@ -13,10 +13,10 @@ body {
 #title {
   position: absolute;
   top: 5vh;
-  left: 35%;
+  left: 37%;
   transform: translateX(-60%);
   text-align: center;
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 .leader-board {
@@ -49,6 +49,16 @@ body {
   border: 1px solid #ccc;
   height: 200px;
   overflow: auto;
+}
+
+.scores-container li:nth-child(odd) {
+  background-color: #fff;
+  padding-left: 1vw;
+}
+
+.scores-container li:nth-child(even) {
+  background-color: #f6f6f6;
+  padding-left: 1vw;
 }
 
 button {
